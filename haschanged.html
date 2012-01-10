@@ -18,9 +18,11 @@
   <link rel="stylesheet" href="css/mystyles.css">
   <style>
   	.changed {
-  		border: 1px solid red;
-  		background-color: #AA0000;
+  		border: 1px solid #F00 !important;
+  		background-color: #FAA;
   	}
+  	
+  	select { width: 100px; }
   </style>
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
@@ -80,15 +82,9 @@
 		(function($) {
 			$(function() {
 				$('form').submit(function(event) { event.preventDefault(); });
-				
-				$(':input').bind('change', function() {
-					console.log('something happened');
-					if ($(this).hasChanged()) {
-						$(this).addClass('changed');
-					}
-					else {
-						$(this).removeClass('changed');
-					}
+				$(':input').bind('change keyup click', function() {
+					if ($(this).hasChanged()) $(this).addClass('changed');
+					else $(this).removeClass('changed');
 				});
 			});
 		})(jQuery);
