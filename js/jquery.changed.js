@@ -69,7 +69,7 @@
                                break;
 
                        default:
-                               changed = ip.value !== ip.defaultValue && !(ip.defaultValue === '' && ip.value === $t.emptyVal());
+                               changed = ip.value !== ip.defaultValue;
                                break;
 
                }
