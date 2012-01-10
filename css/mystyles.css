@@ -1,0 +1,40 @@
+legend.ui-widget-header {
+	padding: 0.1em 0.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0.1em 0.3em;
+}
+
+fieldset {
+	border: 1px solid #888;
+	padding: 1em;
+	margin: 0.75em;
+}
+
+.borderradius input[type=text],
+.borderradius input[type=password],
+.borderradius input[type=search],
+.borderradius input[type=tel],
+.borderradius input[type=date],
+.borderradius input[type=time],
+.borderradius input[type=datetime],
+.borderradius input[type=number],
+.borderradius input[type=email],
+.borderradius input[type=phone],
+.borderradius select
+ {
+	padding: 3px;
+	border: 1px solid #333;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	-khtml-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+fieldset label {
+	margin-left: 2em;
+}
+fieldset label, fieldset input, fieldset textarea, fieldset select {
+	vertical-align: top;
+}
